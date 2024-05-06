@@ -14,7 +14,7 @@ public class MovimientoObjetos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward*Time.deltaTime*30f);
+        transform.Translate(Vector3.forward*Time.deltaTime*100f);
     }
     void OnTriggerEnter(Collider other){
         if(other.CompareTag("ObjectDestroyer")||other.CompareTag("Player"))

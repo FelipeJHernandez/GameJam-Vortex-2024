@@ -403,16 +403,36 @@ public class MovimientoGato : MonoBehaviour
             Enflacar();
         }
         if(other.CompareTag("Dardos")){
-            RecibirDanho(0.1f,2);
+            if(flaco){
+                RecibirDanho(0.2f,2);
+            }
+            else{
+                RecibirDanho(0.1f,2);
+            }
         }
         if(other.CompareTag("Piedrita")){
-            RecibirDanho(0.2f,1);
+            if(flaco){
+                RecibirDanho(0.1f,1);
+            }
+            else{
+                RecibirDanho(0.05f,1);
+            }
         }
         if(other.CompareTag("Piedrota")){
-            RecibirDanho(0.3f,3);
+            if(flaco){
+                RecibirDanho(0.45f,3);
+            }
+            else{
+                RecibirDanho(0.3f,3);
+            }
         }
         if(other.CompareTag("Cleotilde")){
-            RecibirDanho(0.4f,5);
+            if(flaco){
+                RecibirDanho(0.6f,5);
+            }
+            else{
+                RecibirDanho(0.4f,5);
+            }
         }
     }
     public void Enflacar(){
